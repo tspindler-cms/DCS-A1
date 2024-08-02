@@ -39,7 +39,7 @@ local vwv_a1_skyraider =  {
 	M_empty				=	5429,
 	M_nominal			=	8213,
 	M_max				=	13975,
-	M_fuel_max			=  	4000,
+	M_fuel_max			=  	1036,
 	H_max				=	8685,
 	average_fuel_consumption	=	0.03,
 	CAS_min				=	55,
@@ -96,7 +96,7 @@ local vwv_a1_skyraider =  {
 	wing_span		=	15.24,
 	wing_type 		= 	2,
 	thrust_sum_max		=	7000,
-	thrust_sum_ab		=	9000,
+	thrust_sum_ab		=	8100,
 	Vy_max			=	10.8,
 	length			=	15.96,
 	height			=	5.28,
@@ -366,15 +366,14 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {0.60, -.01 ,0 }},--Hawkeye 5 inch unguided rockets
-				
-				
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
 		   }
         ),
 
@@ -386,222 +385,127 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {0.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
-				
-				
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
 			}
         ),
 
        pylon(3, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_3", arg = 310, FiX = 0, FiY = 0, FiZ = 2},
             {
-				{ CLSID = "{AN_M30A1}" ,attach_point_position = {.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
-				{ CLSID = "{AN_M57}" ,attach_point_position = {.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
-				{ CLSID = "{AN-M81}" ,attach_point_position = {.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
-				{ CLSID = "{AN-M88}" ,attach_point_position = {.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
-				{ CLSID = "{AN-M64}" ,attach_point_position = {.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
-				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.104, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.104, 0.0124 }},--M117 1x 750 lbs				
-				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.132, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
-				
-				
+				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
+				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
+				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
+				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
+				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
 			}
         ),
 
       pylon(4, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_4", arg = 311, FiX = 0, FiY = 0, FiZ = 2},
            {
-				{ CLSID = "{AN_M30A1}" ,attach_point_position = {.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
-				{ CLSID = "{AN_M57}" ,attach_point_position = {.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
-				{ CLSID = "{AN-M81}" ,attach_point_position = {.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
-				{ CLSID = "{AN-M88}" ,attach_point_position = {.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
-				{ CLSID = "{AN-M64}" ,attach_point_position = {.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
-				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.104, 0.0120 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.104, 0.0120 }},--M117 1x 750 lbs				
-				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.135, 0.0118 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
-				
-				
+				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
+				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
+				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
+				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
+				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
 			}
         ),
 
        pylon(5, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_5", arg = 312, FiX = 0, FiY = 0, FiZ = 2},
             {
-				{ CLSID = "{AN_M30A1}" ,attach_point_position = {.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
-				{ CLSID = "{AN_M57}" ,attach_point_position = {.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
-				{ CLSID = "{AN-M81}" ,attach_point_position = {.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
-				{ CLSID = "{AN-M88}" ,attach_point_position = {.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
-				{ CLSID = "{AN-M64}" ,attach_point_position = {.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
-				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.104, 0.0118 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.104, 0.0118 }},--M117 1x 750 lbs				
-				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.104, 0.0118 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
-				
-				
+				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
+				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
+				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
+				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
+				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
 			}
         ),
 
        pylon(6, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_6", arg = 313, FiX = 0, FiY = 0, FiZ = 2},
             {
-				{ CLSID = "{AN_M30A1}" ,attach_point_position = {.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
-				{ CLSID = "{AN_M57}" ,attach_point_position = {.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
-				{ CLSID = "{AN-M81}" ,attach_point_position = {.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
-				{ CLSID = "{AN-M88}" ,attach_point_position = {.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
-				{ CLSID = "{AN-M64}" ,attach_point_position = {.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
-				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.104, 0.0125 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.104, 0.0125 }},--M117 1x 750 lbs				
-				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.104, 0.0125 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
+				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
+				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
+				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
+				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
+				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
+			}
+        ),
+
+        pylon(7, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_14", arg = 314},
+             {
+				{ CLSID = "{AN_M30A1}" 	,attach_point_position = {.500, .005 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
+				{ CLSID = "{AN_M57}" 	,attach_point_position = {.4500, -.05 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
+				{ CLSID = "{AN-M64}" 	,attach_point_position = {.500, -.07 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{AN_M65}" 	,attach_point_position = {.35, -.1 ,0 }},--AN-M65A1 1000 lb GP HE (595 lb Comp B)
+				{ CLSID = "{AN-M81}" 	,attach_point_position = {.5, .1 ,0  }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
+				{ CLSID = "{AN-M88}" 	,attach_point_position = {.5, .1 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}",attach_point_position = {.500, .1 ,0 }},--M117 1x 750 lbs
 				
+				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {.45, -.1 ,0 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
+				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {.450, -.05 ,0 	}},--Mk-82 - 500lb GP Bomb LD
+				{ CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}" ,attach_point_position = {.450, -.07 ,0 	}},--Mk83 - 1000LB GP BOMB LD
+				{ CLSID = "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}" ,attach_point_position = {.3, -.1 ,0 }},--Mk-84 - 2000lb GP Bomb LD		
+				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.5, .1 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
+				
+				{ CLSID = "{AV8BNA_AERO1D}" 	,attach_point_position = {.600, .15 ,0 }},--AERO 1D 300 GalFuelTank AV8B Harrier good for Skyraider
+				{ CLSID = "{DFT-150gal}"		,attach_point_position = {.700, .1 ,0 }},
+				{ CLSID = "{DFT-150gal_EMPTY}"	,attach_point_position = {.700, .1 ,0 }},
+				
+				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.4500, -.01 ,0 }},--3xM8_ROCKETS_IN_TUBES
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
+				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
 				
 			}
         ),
 
-        pylon(7, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_7", arg = 314, FiX = 0, FiY = 0, FiZ = 2},
-             {
-				{ CLSID = "{AN_M30A1}" ,attach_point_position = {.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
-				{ CLSID = "{AN_M57}" ,attach_point_position = {.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
-				{ CLSID = "{AN-M81}" ,attach_point_position = {.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
-				{ CLSID = "{AN-M88}" ,attach_point_position = {.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
-				{ CLSID = "{AN-M64}" ,attach_point_position = {.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
-				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.104, -0.0125 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {.0, .05 ,0 }},--M117 1x 750 lbs				
-				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {.0, -.1 ,0 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
-				
-				
-			}
-        ),
+        pylon(8, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_13", arg = 314},
+            {
 
-        pylon(8, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_8", arg = 314},
-            {
-                { CLSID = "{AN_M30A1}" ,attach_point_position = {.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
-				{ CLSID = "{AN_M57}" ,attach_point_position = {.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
-				{ CLSID = "{AN-M81}" ,attach_point_position = {.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
-				{ CLSID = "{AN-M88}" ,attach_point_position = {.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
-				{ CLSID = "{AN-M64}" ,attach_point_position = {.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
-				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.104, -0.0118 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {.0, .05 ,0 }},--M117 1x 750 lbs				
-				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {.0, -.1 ,0 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
-				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
 				
-				
-			}
-        ),
-		
-        pylon(9, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_9", arg = 314},
-           {
-                { CLSID = "{AN_M30A1}" ,attach_point_position = {.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
-				{ CLSID = "{AN_M57}" ,attach_point_position = {.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
-				{ CLSID = "{AN-M81}" ,attach_point_position = {.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
-				{ CLSID = "{AN-M88}" ,attach_point_position = {.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
-				{ CLSID = "{AN-M64}" ,attach_point_position = {.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
-				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.104, -0.0120 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {.0, .05 ,0 }},--M117 1x 750 lbs				
-				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.135, -0.0118 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
-				
-				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-		   }
-        ),
-			
-       pylon(10, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_10", arg = 315},
-            {
-				{ CLSID = "{AN_M30A1}" ,attach_point_position = {.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
-				{ CLSID = "{AN_M57}" ,attach_point_position = {.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
-				{ CLSID = "{AN-M81}" ,attach_point_position = {.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
-				{ CLSID = "{AN-M88}" ,attach_point_position = {.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
-				{ CLSID = "{AN-M64}" ,attach_point_position = {.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
-				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.104, -0.0124 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {.0, .05 ,0 }},--M117 1x 750 lbs				
-				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.132, -0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
-				
-				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-		   }
-        ),
-			
-       pylon(11, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_11", arg = 316},
-            {
-				{ CLSID = "{AN_M30A1}" ,attach_point_position = {.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
-				{ CLSID = "{AN_M57}" ,attach_point_position = {.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
-				{ CLSID = "{AN-M81}" ,attach_point_position = {.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
-				{ CLSID = "{AN-M88}" ,attach_point_position = {.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
-				{ CLSID = "{AN-M64}" ,attach_point_position = {.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
-				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, -0.0124 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {.0, .05 ,0 }},--M117 1x 750 lbs				
-				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {.0, -.1 ,0 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
-				
-				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-			}
-        ),
-			
-        pylon(12, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_12", arg = 317},
-             {
-				{ CLSID = "{AN_M30A1}" ,attach_point_position = {.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
-				{ CLSID = "{AN_M57}" ,attach_point_position = {.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
-				{ CLSID = "{AN-M81}" ,attach_point_position = {.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
-				{ CLSID = "{AN-M88}" ,attach_point_position = {.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
-				{ CLSID = "{AN-M64}" ,attach_point_position = {.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
-				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, -0.0124 }},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {.0, .05 ,0 }},--M117 1x 750 lbs				
-				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {.0, -.1 ,0 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.0, -.150 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
-				
-				
-				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
-			}
-        ),
-			
-        pylon(13, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_13", arg = 318},
-             {
 				{ CLSID = "{AN_M30A1}" 	,attach_point_position = {.00, .005 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" 	,attach_point_position = {.00, -.05 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
 				{ CLSID = "{AN-M64}" 	,attach_point_position = {.00, -.07 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
@@ -616,20 +520,16 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}" 	,attach_point_position = {.0, -.07 ,0 	}},--Mk83 - 1000LB GP BOMB LD
 				{ CLSID = "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}"	,attach_point_position = {.0, -.1 ,0 }},--Mk-84 - 2000lb GP Bomb LD				
 				
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" 				,attach_point_position = {.00, -.01 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" 	,attach_point_position = {.00, -.15 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" 	,attach_point_position = {.00, -.15 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				
-				
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.00, .1 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{AV8BNA_AERO1D}" ,attach_point_position = {.00, .1 ,0 }},--AERO 1D 300 GalFuelTank AV8B Harrier good for Skyraider
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
 				
+				
 			}
         ),
-			
-        pylon(14, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_14", arg = 319},
-             {
+		
+        pylon(9, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_15", arg = 314},
+           {
 				{ CLSID = "{AN_M30A1}" 	,attach_point_position = {.500, .005 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" 	,attach_point_position = {.4500, -.05 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
 				{ CLSID = "{AN-M64}" 	,attach_point_position = {.500, -.07 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
@@ -651,33 +551,122 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.4500, -.01 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
 				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
-				
+				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
+				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
 		   }
         ),
 			
-        pylon(15, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_15", arg = 320},
+       pylon(10, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_7", arg = 315, FiX = 0, FiY = 0, FiZ = 2},
+            {
+				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
+				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
+				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
+				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
+				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
+		   }
+        ),
+			
+       pylon(11, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_8", arg = 316, FiX = 0, FiY = 0, FiZ = 2},
+            {
+				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
+				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
+				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
+				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
+				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
+			}
+        ),
+			
+        pylon(12, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_9", arg = 317, FiX = 0, FiY = 0, FiZ = 2},
              {
-				{ CLSID = "{AN_M30A1}" 	,attach_point_position = {.500, .005 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
-				{ CLSID = "{AN_M57}" 	,attach_point_position = {.4500, -.05 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
-				{ CLSID = "{AN-M64}" 	,attach_point_position = {.500, -.07 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
-				{ CLSID = "{AN_M65}" 	,attach_point_position = {.35, -.1 ,0 }},--AN-M65A1 1000 lb GP HE (595 lb Comp B)
-				{ CLSID = "{AN-M81}" 	,attach_point_position = {.5, .1 ,0  }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
-				{ CLSID = "{AN-M88}" 	,attach_point_position = {.5, .1 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
-				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}",attach_point_position = {.500, .1 ,0 }},--M117 1x 750 lbs
-				
-				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {.45, -.1 ,0 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
-				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {.450, -.05 ,0 	}},--Mk-82 - 500lb GP Bomb LD
-				{ CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}" ,attach_point_position = {.450, -.07 ,0 	}},--Mk83 - 1000LB GP BOMB LD
-				{ CLSID = "{AB8B8299-F1CC-4359-89B5-2172E0CF4A5A}" ,attach_point_position = {.3, -.1 ,0 }},--Mk-84 - 2000lb GP Bomb LD		
-				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.5, .1 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
-				
-				{ CLSID = "{AV8BNA_AERO1D}" 	,attach_point_position = {.600, .15 ,0 }},--AERO 1D 300 GalFuelTank AV8B Harrier good for Skyraider
-				{ CLSID = "{DFT-150gal}"		,attach_point_position = {.700, .1 ,0 }},
-				{ CLSID = "{DFT-150gal_EMPTY}"	,attach_point_position = {.700, .1 ,0 }},
-				
-				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {.4500, -.01 ,0 }},--3xM8_ROCKETS_IN_TUBES
-				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61 pod - 19 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
+				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
+				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
+				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
+				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
+			}
+        ),
+			
+        pylon(13, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_10", arg = 318, FiX = 0, FiY = 0, FiZ = 2},
+             {
+				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
+				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
+				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
+				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
+				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR				
+			}
+        ),
+			
+        pylon(14, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_11", arg = 319, FiX = 0, FiY = 0, FiZ = 2},
+             {
+				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
+				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
+				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
+				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
+				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR			
+		   }
+        ),
+			
+        pylon(15, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_12", arg = 320, FiX = 0, FiY = 0, FiZ = 2},
+             {
+				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
+				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
+				{ CLSID = "{AN-M81}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
+				{ CLSID = "{AN-M88}" ,attach_point_position = {0.0, .05 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
+				{ CLSID = "{AN-M64}" ,attach_point_position = {0.0, -.15 ,0 }},--AN-M64 500 lb GP HE (274 lb Comp B)
+				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-82 - 500lb GP Bomb LD
+				--{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--M117 1x 750 lbs				
+				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
+				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
+				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
+				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
+				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
+				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
 			}
         ),
 	},

@@ -319,7 +319,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
@@ -338,7 +338,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
@@ -357,7 +357,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
@@ -376,7 +376,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
@@ -395,7 +395,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
@@ -414,7 +414,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
@@ -447,7 +447,6 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
-				{ CLSID = "DIS_mk46torp" , connector = "Pylon_4", attach_point_position = {0.000, -0.100, 0.000}},
 				
 			}
         ),
@@ -473,7 +472,6 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.00, .1 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{AV8BNA_AERO1D}" ,attach_point_position = {.00, .1 ,0 }},--AERO 1D 300 GalFuelTank AV8B Harrier good for Skyraider
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
-				{ CLSID = "DIS_mk46torp" , connector = "Pylon_4", attach_point_position = {0.000, -0.100, 0.000}},
 				
 				
 			}
@@ -504,7 +502,6 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
-				{ CLSID = "DIS_mk46torp" , connector = "Pylon_4", attach_point_position = {0.000, -0.100, 0.000}},
 		   }
         ),
 			
@@ -520,7 +517,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
@@ -539,7 +536,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
@@ -558,7 +555,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
@@ -577,7 +574,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR				
@@ -596,7 +593,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR			
@@ -615,12 +612,13 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {-0.2, -0.107, 0.0124 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{A021F29D-18AB-4d3e-985C-FC9C60E35E9E}",attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{3DFB7321-AB0E-11d7-9897-000476191836}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-68 pod - 7 x 2.75 Hydra, UnGd Rkts M156, Wht Phos
-				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
+				--{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{3xM8_ROCKETS_IN_TUBES}" ,attach_point_position = {0.0, -.050 ,0 }},--3xM8_ROCKETS_IN_TUBES
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {0.0, .025 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{HVAR}" ,attach_point_position = {0.00, -.02 ,0 }},--FROM CUESTRA BRO F4U CORSAIR
 			}
         ),
+
 	},
    		
 	

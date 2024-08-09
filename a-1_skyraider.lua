@@ -1,7 +1,3 @@
---24.07.27 LUA BY SEABAT MATCH HAWKEYE PRE-BETA EDM 24.07.22
-
-
-
 dofile(current_mod_path.."/a-1_skyraider_damage.lua")
 
 local vwv_a1_skyraider =  {
@@ -51,34 +47,21 @@ local vwv_a1_skyraider =  {
 	has_differential_stabilizer 	= 	false,
 
 	
-	main_gear_pos 			= 	{ -2.54, -1.42,   0.0},--from neg 1.4
-	nose_gear_pos 			= 	{   0.8, -2.05,   0.0},--from neg 1.25
-	
-	--main_gear_pos 			= 	{ -2.54, -1.6,   0.0},--from 24.06.27 higher number lower gear
-	--nose_gear_pos 			= 	{   0.8, -2.2,   0.0},--from 24.06.27 higher number higher gear
-	
-	--main_gear_pos                   = 	{ 5.030, -2.575, 1.779},
-	--nose_gear_pos                   = 	{ 2.510, -2.125, 0.000}, -- TAIL WHEEL 
-	
-	
-	--main_gear_pos                   = 	{ 5.030, -2.100, 1.779},
-	--nose_gear_pos                   = 	{ 2.510, -1.620, 0.000}, -- TAIL WHEEL 
-
-	
-	
+	main_gear_pos 			= 	{ -2.30, -1.42,   0.0},--from neg 1.4
+	nose_gear_pos 			= 	{   1.3, -2.05,   0.0},--from neg 1.25
 	
 	nose_gear_wheel_diameter	=	0.754,
 	main_gear_wheel_diameter	=	0.872,
 	
 	
-	--nose_gear_amortizer_direct_stroke   		= 0.000,   -- down from nose_gear_pos !!! 
-	--nose_gear_amortizer_reversal_stroke  		= -0.114,  -- up
-	--nose_gear_amortizer_normal_weight_stroke 	= -0.077,  -- -0.20,   --  -0.050-0.325, hiking
-	--nose_gear_hiking				=  0.200,
+	nose_gear_amortizer_direct_stroke   		= -1.000,   -- down from nose_gear_pos !!! 
+	nose_gear_amortizer_reversal_stroke  		= -1.0,  -- up
+	nose_gear_amortizer_normal_weight_stroke 	= -0.015,  -- -0.20,   --  -0.050-0.325, hiking
+	nose_gear_hiking				=  0.0,
 
-	--main_gear_amortizer_direct_stroke	 	=   0, --  down from main_gear_pos !!!
-	--main_gear_amortizer_reversal_stroke  	    	=   -0.442, --  up 
-	--main_gear_amortizer_normal_weight_stroke    	=   -0.143,-- 
+	main_gear_amortizer_direct_stroke	 	=   0, --  down from main_gear_pos !!!
+	main_gear_amortizer_reversal_stroke  	    	=   -1.0, --  -1
+	main_gear_amortizer_normal_weight_stroke    	=   -0.015,--  -0.05
 	
 
 	wing_tip_pos = {-0.82, 0.200,     7.5},
@@ -112,13 +95,6 @@ local vwv_a1_skyraider =  {
 
 	
 	
-	net_animation ={
-	85, --LaunchBar
-	521,
-	},	
-	
-	launch_bar_connected_arg_value	= launch_bar_connected_arg_value_,
-	
 	mechanimations = {
 	
 	Door0 = {
@@ -134,34 +110,7 @@ local vwv_a1_skyraider =  {
 			{Transition 		= {"Extend", "Retract"}, Sequence = {{C = {{"Arg", 8, "to", 1.0, "in", 10.0}}}}, Flags = {"Reversible", "StepsBackwards"}},
 		},
 		
-		LaunchBar = {
-            {Transition = {"Retract", "Extend"}, Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 3}, {"Arg", 85, "to", 1.00, "in", 10.4}}}}},
-			{Transition = {"Retract", "Stage"},  Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 3}, {"Arg", 85, "to", 0.93, "in", 14.4}}}}},
-			{Transition = {"Any", "Retract"},  Sequence = {{C = {{"ChangeDriveTo", "Hydraulic"}, {"VelType", 2}, {"Arg", 85, "to", 0.000, "in", 10.02}}}}},--4.5 LaunchBar Hoch
-            {Transition = {"Extend", "Stage"},   Sequence = {
-					{C = {{"ChangeDriveTo", "Mechanical"}, {"Sleep", "for", 10.000}}},
-					{C = {{"Arg", 85, "from", 1.00, "to", 0.92, "in", 10.600}}},
-					{C = {{"Arg", 85, "from", 0.92, "to", 0.93, "in", 10.200}}},
-					{C = {{"Sleep", "for", 0.15}}},
-					{C = {{"Arg", 85, "from", 0.93, "to", 0.95, "in", 10.1, "sign", 2}}},
-					{C = {{"Arg", 85, "from", 0.95, "to", 1.00, "in", 1.1}}},
-				},
-			},
-			{Transition = {"Stage", "Pull"},  Sequence = {
-					{C = {{"ChangeDriveTo", "Mechanical"}, {"VelType", 2}, {"Arg", 85,"from", 1.00, "to", launch_bar_connected_arg_value_, "in", 10.15}}},
-					{C = {{"ChangeDriveTo", "Mechanical"}, {"VelType", 2}, {"Arg", 85, "to", 1.00, "speed", 0.1}}},
-					{C = {{"ChangeDriveTo", "Mechanical"}, {"VelType", 2}, {"Arg", 85, "to", 1.00, "speed", 0.02}}},
-					}
-			},
-			{Transition = {"Stage", "Extend"},   Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 3}, {"Arg", 85, "from", 1.00, "to", 1.00, "in", 10.2}}}}},
-        },
 		
-		
-		BRIDLE = 
-        {
-            {Transition = {"Any", "Stage"}, Sequence = {{C = {{"ChangeDriveTo", "Hydraulic"}, {"VelType", 2},{"Arg", 521, "to", 0.8, "in", 2.0}}}}},--F14B
-            {Transition = {"Stage","Extend"}, Sequence = {{C = {{"Arg", 521, "to", 0.0, "in", 0.7}}}}},            
-        },
 		
 		
     }, -- end of mechanimations
@@ -498,6 +447,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
+				{ CLSID = "DIS_mk46torp" , connector = "Pylon_4", attach_point_position = {0.000, -0.100, 0.000}},
 				
 			}
         ),
@@ -523,6 +473,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.00, .1 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{AV8BNA_AERO1D}" ,attach_point_position = {.00, .1 ,0 }},--AERO 1D 300 GalFuelTank AV8B Harrier good for Skyraider
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
+				{ CLSID = "DIS_mk46torp" , connector = "Pylon_4", attach_point_position = {0.000, -0.100, 0.000}},
 				
 				
 			}
@@ -553,6 +504,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
+				{ CLSID = "DIS_mk46torp" , connector = "Pylon_4", attach_point_position = {0.000, -0.100, 0.000}},
 		   }
         ),
 			

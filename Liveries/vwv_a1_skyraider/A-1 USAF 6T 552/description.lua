@@ -6,6 +6,7 @@ livery = {
 	
 	{"fuel_150_a4e",	DIFFUSE			,	"A1 150 GAL USAF WHT", false};
 	{"vwv_A-1_propblur",    DIFFUSE                ,    "A-1 Skyraider PROP BLUR", false};
+	{"launch_bar",    DIFFUSE                ,    "launch_bar", false};
 	
 }
 name = "A-1 USAF 6T 552"

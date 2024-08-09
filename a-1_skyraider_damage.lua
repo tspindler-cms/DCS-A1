@@ -1,6 +1,3 @@
-
--- A_1_Skyraider_Damage
-
 Damage = {
 
 	[0] =  {critical_damage = 15, args = {296}},  -- pilot area
@@ -26,5 +23,3 @@ Damage = {
 	[18] =  {critical_damage = 5, args = {266}},   -- Vertical stabilizer
 	
 	},	
-
-

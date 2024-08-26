@@ -6,7 +6,7 @@
 local tinytim = {
 	category			= CAT_ROCKETS,
 	CLSID				= "{tinytim}",
-	name				= "tinytim",
+	name				= "Tiny Tim",
 	user_name			= _("tinytim"),
 	wsTypeOfWeapon		= {wsType_Weapon,wsType_NURS,wsType_Rocket, 1350},
 	scheme 				= "nurs-standard",
@@ -23,7 +23,7 @@ local tinytim = {
             Ma          = 0.50851, -- dependence moment coefficient of  by  AoA
             Mw          = 3.28844, --  dependence moment coefficient by angular speed
             shapeName   = "",
-            
+
             wind_time   = 1.5, -- dispersion coefficient
             wind_sigma  = 4, -- dispersion coefficient
         },
@@ -83,7 +83,7 @@ declare_weapon(tinytim)
 local tinytim = {
 	category			= CAT_ROCKETS,
 	CLSID				= "{tinytim}",
-	name				= "tinytim",
+	name				= "Tiny Tim",
 	user_name			= _("tinytim"),
 	wsTypeOfWeapon		= {wsType_Weapon,wsType_NURS,wsType_Rocket, 1450},
 	scheme 				= "nurs-standard",
@@ -100,7 +100,7 @@ local tinytim = {
             Ma          = 0.50851, -- dependence moment coefficient of  by  AoA
             Mw          = 3.28844, --  dependence moment coefficient by angular speed
             shapeName   = "",
-            
+
             wind_time   = 1.5, -- dispersion coefficient
             wind_sigma  = 4, -- dispersion coefficient
         },
@@ -180,7 +180,7 @@ function declear_rocket_pods(_uuid, _display_name, _display_icon, _rocket_num, _
 				ShapeName = "", -- pod name
 				IsAdapter = true,
 			},
-		
+
 			{
 				Position	= {_forwarding + 0.01, - 0.065 - _diameter/2 * 3 - _distance, 0}, --2 0.25
 				ShapeName	= _rocket_shape,
@@ -195,16 +195,12 @@ function declear_rocket_pods(_uuid, _display_name, _display_icon, _rocket_num, _
 				IsAdapter = true,
 			},
 
-	
+
 		}
 	end
 	return data
 end
 
-
-
-
-
-declare_loadout(declear_rocket_pods("{tinytim}", "tinytim", "tinytim.png", 1, 1350, "tinytim", 0.025, 0.135, 0.38))
+declare_loadout(declear_rocket_pods("{tinytim}", "Tiny Tim", "tinytim.png", 1, 1350, "tinytim", 0.025, 0.135, 0.38))
 
 

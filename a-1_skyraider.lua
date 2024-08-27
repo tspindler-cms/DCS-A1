@@ -46,14 +46,15 @@ local vwv_a1_skyraider =  {
 	has_speedbrake			=	true,
 	has_differential_stabilizer 	= 	false,
 
-	
-	main_gear_pos 			= 	{ -2.30, -1.42,   0.0},--from neg 1.4
-	nose_gear_pos 			= 	{   1.3, -2.05,   0.0},--from neg 1.25
-	
+
+	-- main_gear_pos 			= 	{ -2.30, -1.42,   0.0},--from neg 1.4
+	main_gear_pos 			= 	{ -2.30, -1.28,   0.0},--from neg 1.4
+	-- nose_gear_pos 			= 	{   1.3, -2.05,   0.0},--from neg 1.25
+	nose_gear_pos 			= 	{   1.3, -1.52,   0.0},--from neg 1.25
+
 	nose_gear_wheel_diameter	=	0.754,
 	main_gear_wheel_diameter	=	0.872,
-	
-	
+
 	nose_gear_amortizer_direct_stroke   		= -1.000,   -- down from nose_gear_pos !!! 
 	nose_gear_amortizer_reversal_stroke  		= -1.0,  -- up
 	nose_gear_amortizer_normal_weight_stroke 	= -0.015,  -- -0.20,   --  -0.050-0.325, hiking
@@ -62,7 +63,6 @@ local vwv_a1_skyraider =  {
 	main_gear_amortizer_direct_stroke	 	=   0, --  down from main_gear_pos !!!
 	main_gear_amortizer_reversal_stroke  	    	=   -1.0, --  -1
 	main_gear_amortizer_normal_weight_stroke    	=   -0.015,--  -0.05
-	
 
 	wing_tip_pos = {-0.82, 0.200,     7.5},
 
@@ -93,26 +93,16 @@ local vwv_a1_skyraider =  {
 	IR_emission_coeff_ab	=	2.50,
 	engines_count		=	1,
 
-	
-	
 	mechanimations = {
-	
-	Door0 = {
-            		{Transition = {"Close", "Open"},  Sequence = {{C = {{"Arg", 38, "to", 0.9, "in", 9.0},},},}, Flags = {"Reversible"},},
-            		{Transition = {"Open", "Close"},  Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 6.0},},},}, Flags = {"Reversible", "StepsBackwards"},},
-            		{Transition = {"Any", "Bailout"}, Sequence = {{C = {{"JettisonCanopy", 0},},},},},
-	    	},	
-	
-			
-	  
-	FoldableWings 		= {
-			{Transition 		= {"Retract", "Extend"}, Sequence = {{C = {{"Arg", 8, "to", 0.0, "in", 10.0}}}}, Flags = {"Reversible"}},
-			{Transition 		= {"Extend", "Retract"}, Sequence = {{C = {{"Arg", 8, "to", 1.0, "in", 10.0}}}}, Flags = {"Reversible", "StepsBackwards"}},
+		Door0 = {
+			{Transition = {"Close", "Open"},  Sequence = {{C = {{"Arg", 38, "to", 0.9, "in", 9.0},},},}, Flags = {"Reversible"},},
+			{Transition = {"Open", "Close"},  Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 6.0},},},}, Flags = {"Reversible", "StepsBackwards"},},
+			{Transition = {"Any", "Bailout"}, Sequence = {{C = {{"JettisonCanopy", 0},},},},},
 		},
-		
-		
-		
-		
+		FoldableWings 		= {
+				{Transition 		= {"Retract", "Extend"}, Sequence = {{C = {{"Arg", 8, "to", 0.0, "in", 10.0}}}}, Flags = {"Reversible"}},
+				{Transition 		= {"Extend", "Retract"}, Sequence = {{C = {{"Arg", 8, "to", 1.0, "in", 10.0}}}}, Flags = {"Reversible", "StepsBackwards"}},
+			},
     }, -- end of mechanimations
 
 	LandRWCategories =

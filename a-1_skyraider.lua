@@ -153,7 +153,7 @@ local vwv_a1_skyraider =  {
 
 	crew_members =
 	{
-			[1] = 
+			[1] =
 		{
 			ejection_seat_name		= "AV8BNA_Pilot_seat",
 			pilot_name		   		= "AV8BNA_Pilot",
@@ -779,6 +779,7 @@ local vwv_a1_skyraider =  {
             cefor      =    0.37, -- not used for fuel calulation , only for AI routines to check flight time ( fuel calculation algorithm is built in )
             dpdh_m     =    1800, --  altitude coefficient for max thrust 2100?
             dpdh_f     =    1800, --  altitude coefficient for AB thrust
+
             table_data =
             {
                 [1] =     {0,      11395.9    ,11395.9},
@@ -791,6 +792,7 @@ local vwv_a1_skyraider =  {
                 [8] =     {0.7,    10012.3    ,10012.3},
                 [9] =     {0.8,     6719.3    , 6719.3},
                 [10] =    {0.9,     4650      , 4650},
+
 --[[                [1] =     {0,      10395.9   ,10395.9},
                 [2] =     {0.1,    10393.8   ,10393.8},
                 [3] =     {0.2,    9995.6    ,9995.6},
@@ -801,41 +803,40 @@ local vwv_a1_skyraider =  {
                 [8] =     {0.7,    8312.3    ,8312.3},
                 [9] =     {0.8,    5719.3    ,5719.3},
                 [10] =    {0.9,    3650      ,3650},
-]]				
-            },            
-     -- M - Mach number
+]]	
+            },			
+            -- M - Mach number
             -- Pmax - Engine thrust at military power
             -- Pfor - Engine thrust at AFB
-
-            k_adiab_1           = 0.024, --adiabatic constant?
-            k_adiab_2           = 0.043, --adiabatic constant?
-            MAX_Manifold_P_1    = 94819, --cont cruise manifold pressure in Pa?
-            MAX_Manifold_P_2    = 162547, --takeoff manifold pressure in Pa?
-            MAX_Manifold_P_3    = 162547, --emergency manifold pressure in Pa (same as t/o for DC3)
-            k_after_cool        = 0.54, --something to do with turbocharging?
-            Displ               = 29.98, --engine displacement litres
-            k_Eps               = 6.7, --compression ratio?
-            Stroke              = 0.139, --length of piston stroke in metres
-            V_pist_0            = 14, --no# cylinders?
-            Nu_0                = 1.2,
-            Nu_1                = 0.9,
-            Nu_2                = 0.001,
-            N_indic_0           = 1023040,
-            N_fr_0              = 0.042,
-            N_fr_1              = 0.02,
+			-- Some settings from P47D-40
+			k_adiab_1 = 0.0275,
+			k_adiab_2 = 0.0275,
+			MAX_Manifold_P_1 = 108300,
+			MAX_Manifold_P_2 = 155774,
+			MAX_Manifold_P_3 = 196410,
+			k_after_cool = 0.38,
+            Displ = 45.9,
+			k_Eps = 6.75,
+            Stroke = 0.152,
+            V_pist_0 = 15,
+			Nu_0 = 1.2,
+			Nu_1 = 0.91,
+			Nu_2 = 0.0015,
+			N_fr_0 = 0.078,
+			N_fr_1 = 0.002,
+			N_indic_0 = 993576.4,
             Init_Mom            = 220,
             D_prop              = 3.51, --dia of propeller in metres
-            MOI_prop            = 46, --momemt of inertia propeller
-            k_gearbox           = 1.778, --gear reduction for prop
-            P_oil               = 586054, -- oil pressure? 85psi at 140deg F
+            MOI_prop = 88,
+            k_gearbox = 2,
+            P_oil = 495438,
             k_boost             = 3, --type of boost ??
             k_cfug              = 0.003,
-            k_oil               = 0.00004,
+            k_oil = 4e-05,
             k_piston            = 3000,
             k_reg               = 0.003,
-            k_vel               = 0.017,
-
-        }, -- end of engine
+            k_vel               = 0.017,			
+		}, -- end of engine
     }, -- end of SFM_Data
 
 	--damage , index meaning see in  Scripts\Aircrafts\_Common\Damage.lua

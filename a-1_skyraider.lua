@@ -61,7 +61,7 @@ local vwv_a1_skyraider =  {
 	nose_gear_hiking				=  0.0,
 
 	main_gear_amortizer_direct_stroke	 	=   0, --  down from main_gear_pos !!!
-	main_gear_amortizer_reversal_stroke  	    	=   -1.0, --  -1
+	main_gear_amortizer_reversal_stroke  	    	=  -0.1, --  -1.0, --  -1
 	main_gear_amortizer_normal_weight_stroke    	=   -0.015,--  -0.05
 
 	wing_tip_pos = {-0.82, 0.200,     7.5},
@@ -73,8 +73,8 @@ local vwv_a1_skyraider =  {
 	Ny_min			=	-3,
 	Ny_max			=	7,
 	tand_gear_max		=	3.3577,
-	V_max_sea_level		=	145.0,
-	V_max_h			=	165.0,
+	V_max_sea_level		= 145.0,
+	V_max_h			=	  165.0,
 	wing_area		=	37.1,
 	wing_span		=	15.24,
 	wing_type 		= 	2,
@@ -420,7 +420,6 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{AN-M81}" 	,attach_point_position = {.5, .1 ,0  }},--AN-M81 260 lb Fragmentation (34.1 lb Comp B)
 				{ CLSID = "{AN-M88}" 	,attach_point_position = {.5, .1 ,0 }},--AN-M88 216 lb Fragmentation (47 lb Comp B)
 				{ CLSID = "{00F5DAC4-0466-4122-998F-B1A298E34113}",attach_point_position = {.500, .1 ,0 }},--M117 1x 750 lbs
-				
 				{ CLSID = "{ADD3FAE1-EBF6-4EF9-8EFC-B36B5DDF1E6B}" ,attach_point_position = {.45, -.1 ,0 }},--Mk-20 Rockeye - 490lbs CBU, 247 x HEAT Bomblets
 				{ CLSID = "{BCE4E030-38E9-423E-98ED-24BE3DA87C32}" ,attach_point_position = {.450, -.05 ,0 	}},--Mk-82 - 500lb GP Bomb LD
 				{ CLSID = "{7A44FF09-527C-4B7E-B42B-3F111CFE50FB}" ,attach_point_position = {.450, -.07 ,0 	}},--Mk83 - 1000LB GP BOMB LD
@@ -621,6 +620,7 @@ local vwv_a1_skyraider =  {
     },	
 	DefaultTask = aircraft_task(CAS),
 
+	--[[
 	SFM_Data = {
 		aerodynamics = 
 		{
@@ -692,7 +692,151 @@ local vwv_a1_skyraider =  {
 				}                 
 		}, -- end of engine
 	},
+	]]
 
+	-- new SFM data, based on DC-3 mod, kudos Hawkeye60
+	SFM_Data = {
+        aerodynamics = -- Cx = Cx_0 + Cy^2*B2 +Cy^4*B4
+        {
+            Cy0            =    0.2,  -- zero AoA lift coefficient
+            Mzalfa         =    3.4,  -- coefficients for pitch agility
+            Mzalfadt       =    0.8,    -- coefficients for pitch agility
+            kjx            =    2.25,    
+            kjz            =    0.00125,
+            Czbe           =    -0.012, -- coefficient, along Z axis (perpendicular), affects yaw, negative value means force orientation in FC coordinate system
+            cx_gear        =    0.0330,    -- coefficient, drag, gear
+            cx_flap        =    0.033,   -- coefficient, drag, full flaps
+            cy_flap        =    0.28,    -- coefficient, normal force, lift, flaps
+            cx_brk         =    0.06,   -- coefficient, drag, breaks
+            table_data  =
+            {
+            --   M        Cx0        Cya        B        B4            Omxmax    Aldop    Cymax
+--[[                {0,      0.0249,    0.117,     0.056,    0.000089,    0.11,    17,        1.40}, --0
+                {0.1,    0.0249,    0.117,     0.056,    0.000089,    0.25,    18,        1.65}, --76.7269mph
+                {0.2,    0.0249,    0.116,     0.056,    0.000089,    0.25,    18,        1.65}, --153.454 mph
+                {0.3,    0.0249,    0.1163,    0.054,    0.000089,    0.25,    17,        1.6}, --230.2 mph
+                {0.4,    0.0259,    0.1176,    0.048,    0.000192,    0.20,    16,        1.44}, --306.908
+                {0.5,    0.0269,    0.1179,    0.030,    0.000593,    0.18,    10,        1.0}, --383.635
+                {0.6,    0.0289,    0.1183,    0.028,    0.0032,      0.1,      9,        0.9}, --460.361
+                {0.7,    0.047,     0.1185,    0.149,    0.19,        0.1,      6,        0.8}, --537.088
+                {0.8,    0.064,     0.1186,    0.17,     0.4,         0.1,      3,        0.6}, --613.815
+                {0.9,    0.0995,    0.1185,    0.175,    2.7925,      0.1,      3,        0.4}, --690.542
+                {1,      0.146,     0.1184,    0.2,      3.19,        0.1,      1,        0.2}, --767.269
+]]
+                {0,      0.018,    0.117,     0.056,    0.000089,    0.11,    17,        1.40}, --0
+                {0.1,    0.018,    0.117,     0.056,    0.000089,    0.25,    18,        1.65}, --76.7269mph
+                {0.2,    0.018,    0.116,     0.056,    0.000089,    0.25,    18,        1.65}, --153.454 mph
+                {0.3,    0.018,    0.1163,    0.054,    0.000089,    0.25,    17,        1.6}, --230.2 mph
+                {0.4,    0.019,    0.1176,    0.048,    0.000192,    0.20,    16,        1.44}, --306.908
+                {0.5,    0.020,    0.1179,    0.030,    0.000593,    0.18,    10,        1.0}, --383.635
+                {0.6,    0.021,    0.1180,    0.029,    0.0004,      0.15,     9,        0.9}, --460.361
+                {0.7,    0.021,    0.1183,    0.028,    0.00032,     0.14,     9,        0.85}, --537.088
+                {0.8,    0.064,    0.1186,    0.17,     0.4,         0.1,      3,        0.6}, --613.815
+                {0.9,    0.0995,    0.1185,    0.175,    2.7925,      0.1,      3,        0.4}, --690.542
+                {1,      0.146,     0.1184,    0.2,      3.19,        0.1,      1,        0.2}, --767.269
+            }, -- end of table_data
+            -- M - Mach number
+            -- Cx0 - Coefficient, drag, profile, of the airplane
+            -- Cya - Normal force coefficient of the wing and body of the aircraft in the normal direction to that of flight. Inversely proportional to the available G-loading at any Mach value. (lower the Cya value, higher G available) per 1 degree AOA
+            -- B - Polar quad coeff
+            -- B4 - Polar 4th power coeff
+            -- Omxmax - roll rate, rad/s
+            -- Aldop - Alfadop Max AOA at current M - departure threshold
+            -- Cymax - Coefficient, lift, maximum possible (ignores other calculations if current Cy > Cymax)
+        }, -- end of aerodynamics
+        engine =
+        {
+            Nominal_RPM =  2700.0,
+            Nmg         =    23.077, -- RPM at idle
+            MinRUD      =     0, -- Min state of the throttle
+            MaxRUD      =     1, -- Max state of the throttle
+            MaksRUD     =     1, -- Military power state of the throttle
+            ForsRUD     =     1, -- Afterburner state of the throttle
+            type        = "Radial",
+			Startup_Prework = 12,
+			Startup_RPMs = {
+				{0, 0},
+				{1, 66},
+				{4.6, 66},
+				{5, 300},
+				{5.5, 450},
+				{7, 500},
+				{9, 800},
+				{12, 600},
+			},
+			Startup_Ignition_Time = 7,
+			Shutdown_Duration = 6.8,
+            cylinder_firing_order = {1, 10, 5, 14, 9, 4, 13, 8, 3, 12, 7, 2, 11, 6},
+            --    E_TURBOJET = 0
+            --    E_TURBOJET_AB = 1
+            --    E_PISTON = 2
+            --    E_TURBOPROP = 3
+            --    E_TURBOFAN    = 4
+            --    E_TURBOSHAFT = 5
+            hMaxEng    =    12.5, -- Max altitude for safe engine operation in km
+            dcx_eng    =    0.015, -- Engine drag coeficient
+            cemax      =    0.37, -- not used for fuel calulation , only for AI routines to check flight time ( fuel calculation algorithm is built in )
+            cefor      =    0.37, -- not used for fuel calulation , only for AI routines to check flight time ( fuel calculation algorithm is built in )
+            dpdh_m     =    1800, --  altitude coefficient for max thrust 2100?
+            dpdh_f     =    1800, --  altitude coefficient for AB thrust
+            table_data =
+            {
+                [1] =     {0,      11395.9    ,11395.9},
+                [2] =     {0.1,    11393.8    ,11393.8},
+                [3] =     {0.2,    10995.6    ,10995.6},
+                [4] =     {0.3,    10800.8    ,10800.8},
+                [5] =     {0.4,    10673.3    ,10673.3},
+                [6] =     {0.5,    10254.2    ,10254.2},
+                [7] =     {0.6,    10029.2    ,10029.2},
+                [8] =     {0.7,    10012.3    ,10012.3},
+                [9] =     {0.8,     6719.3    , 6719.3},
+                [10] =    {0.9,     4650      , 4650},
+--[[                [1] =     {0,      10395.9   ,10395.9},
+                [2] =     {0.1,    10393.8   ,10393.8},
+                [3] =     {0.2,    9995.6    ,9995.6},
+                [4] =     {0.3,    9800.8    ,9800.8},
+                [5] =     {0.4,    9673.3    ,9673.3},
+                [6] =     {0.5,    9254.2    ,9254.2},
+                [7] =     {0.6,    9029.2    ,9029.2},
+                [8] =     {0.7,    8312.3    ,8312.3},
+                [9] =     {0.8,    5719.3    ,5719.3},
+                [10] =    {0.9,    3650      ,3650},
+]]				
+            },            
+     -- M - Mach number
+            -- Pmax - Engine thrust at military power
+            -- Pfor - Engine thrust at AFB
+
+            k_adiab_1           = 0.024, --adiabatic constant?
+            k_adiab_2           = 0.043, --adiabatic constant?
+            MAX_Manifold_P_1    = 94819, --cont cruise manifold pressure in Pa?
+            MAX_Manifold_P_2    = 162547, --takeoff manifold pressure in Pa?
+            MAX_Manifold_P_3    = 162547, --emergency manifold pressure in Pa (same as t/o for DC3)
+            k_after_cool        = 0.54, --something to do with turbocharging?
+            Displ               = 29.98, --engine displacement litres
+            k_Eps               = 6.7, --compression ratio?
+            Stroke              = 0.139, --length of piston stroke in metres
+            V_pist_0            = 14, --no# cylinders?
+            Nu_0                = 1.2,
+            Nu_1                = 0.9,
+            Nu_2                = 0.001,
+            N_indic_0           = 1023040,
+            N_fr_0              = 0.042,
+            N_fr_1              = 0.02,
+            Init_Mom            = 220,
+            D_prop              = 3.51, --dia of propeller in metres
+            MOI_prop            = 46, --momemt of inertia propeller
+            k_gearbox           = 1.778, --gear reduction for prop
+            P_oil               = 586054, -- oil pressure? 85psi at 140deg F
+            k_boost             = 3, --type of boost ??
+            k_cfug              = 0.003,
+            k_oil               = 0.00004,
+            k_piston            = 3000,
+            k_reg               = 0.003,
+            k_vel               = 0.017,
+
+        }, -- end of engine
+    }, -- end of SFM_Data
 
 	--damage , index meaning see in  Scripts\Aircrafts\_Common\Damage.lua
 	Damage = {

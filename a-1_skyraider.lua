@@ -862,6 +862,29 @@ local vwv_a1_skyraider =  {
 		[16] =  {critical_damage = 20, args = {264}},  -- pod left
 		[17] =  {critical_damage = 20, args = {265}},  -- pod right
 		[18] =  {critical_damage = 5, args = {266}},   -- Vertical stabilizer
+
+		-- Undercarriage
+		["WHEEL_REAR"] = {
+			critical_damage = 2, args = {134}, damage_boundary = 1.0,
+			construction = {durability = 0.15, skin = "Rubber", refractory = true},
+			innards = {
+				{id = "XUCShockC", skin = "Steel", wall = 0.010},
+			},
+		},
+		["WHEEL_R"] = {
+			critical_damage = 3, args = {135}, damage_boundary = 1.0,
+			construction = {durability = 0.25, skin = "Rubber", refractory = true},
+			innards = {
+				{id = "XUCShockRH", skin = "Steel", wall = 0.009},
+			},
+		},
+		["WHEEL_L"] = {
+			critical_damage = 3, args = {136}, damage_boundary = 1.0,
+			construction = {durability = 0.25, skin = "Rubber", refractory = true},
+			innards = {
+				{id = "XUCShockLH", skin = "Steel", wall = 0.009},
+			},
+		},
 	},
 	
 	DamageParts = 

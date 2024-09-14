@@ -436,6 +436,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{F3EFE0AB-E91A-42D8-9CA2-B63C91ED570A}" ,attach_point_position = {0.0, -.150 ,0 }},--LAU-10 pod - 4 x Zuni HE
 				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
+				{ CLSID = "DIS_mk46torp", attach_point_position = {0.2, -0.07, 0}}, --Torpedo
 				
 			}
         ),
@@ -461,7 +462,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{CAE48299-A294-4bad-8EE6-89EFC5DCDF00}" ,attach_point_position = {.00, .1 ,0 }},--SUU-25 x 8 LUU-2 - Target Marker Flares
 				{ CLSID = "{AV8BNA_AERO1D}" ,attach_point_position = {.00, .1 ,0 }},--AERO 1D 300 GalFuelTank AV8B Harrier good for Skyraider
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
-				
+				{ CLSID = "DIS_mk46torp", attach_point_position = {0, -0.07, 0}}, --Torpedo
 				
 			}
         ),
@@ -491,6 +492,7 @@ local vwv_a1_skyraider =  {
 				{ CLSID = "{FD90A1DC-9147-49FA-BF56-CB83EF0BD32B}" ,attach_point_position = {.4500, -.13 ,0 }},--LAU-61R pod - 19 x 2.75 Hydra, UnGd Rkts M151, HE
 				{ CLSID = "{tinytim}" ,attach_point_position = {.60, -.01 ,0 }},--Hawkeye 5 inch unguided rocket
 				{ CLSID = "{LTF_5B}" ,attach_point_position = {-.2, -.15 ,0 }},--Torpedo
+				{ CLSID = "DIS_mk46torp", attach_point_position = {0.2, -0.07, 0}}, --Torpedo
 		   }
         ),
 			

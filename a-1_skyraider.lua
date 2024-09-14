@@ -752,7 +752,7 @@ local vwv_a1_skyraider =  {
             MaxRUD      =     1, -- Max state of the throttle
             MaksRUD     =     1, -- Military power state of the throttle
             ForsRUD     =     1, -- Afterburner state of the throttle
-            type        = "Radial",
+            type        = 3, -- needed for carrier take-off
 			Startup_Prework = 12,
 			Startup_RPMs = {
 				{0, 0},

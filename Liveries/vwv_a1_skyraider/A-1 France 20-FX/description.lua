@@ -1,25 +1,23 @@
 livery = {
 	
-	{"fuselage",		DIFFUSE						,	"A-1 FR 20-FX", false};
-	{"fuselage",		NORMAL_MAP					,	"A-1 FR 20-FX NORM", false};
-	{"fuselage",		ROUGHNESS_METALLIC			,	"A-1 FR 20-FX RM", false};
+	{"fuselage",		DIFFUSE						,	"A_1_FR 20-FX", false};
+	{"fuselage",		NORMAL_MAP					,	"A_1_FR 20-FX NORM", false};
+	{"fuselage",		ROUGHNESS_METALLIC			,	"A_1_FR 20-FX RM", false};
 	
 	
-	{"18 - Default",	DIFFUSE					,	"A-1 NAVY TAILHOOK", true};
 	
-	{"fuel_150_a4e",	DIFFUSE					,	"A1 150 GAL FRN", true};
-	{"AV8B7",	DIFFUSE							,	"A1 300 GAL USN", true};
-	{"fuel_150_a4e",	ROUGHNESS_METALLIC		,	"A1 150 GAL RM FRN", true};
 	
-	{"vwv_A-1_propblur",	DIFFUSE				,	"A-1 Skyraider PROP BLUR", true};
+	{"fuel_150_a4e",	DIFFUSE					,	"A_1_150 GAL FRN", true};
+	{"fuel_150_a4e",	ROUGHNESS_METALLIC		,	"A_1_150 GAL FRN RM", true};
+	
+	{"AV8B7",	DIFFUSE							,	"A_1_300 GAL FRN", true};
+	{"AV8B7",	ROUGHNESS_METALLIC				,	"A_1_300 GAL FRN RM", true};
+	
+	--{"18 - Default",	DIFFUSE					,	"A_1_NAVY TAILHOOK", false};
+	--{"vwv_A-1_propblur",	DIFFUSE				,	"A_1_Skyraider_PROPBLUR", false};
 	
 	
 	
 }
 name = "A-1 Skyraider FRANCE 20-FX"
 
-custom_args =
-{
-	[41] = 1.0, 
-	
-}

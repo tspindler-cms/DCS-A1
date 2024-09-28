@@ -41,7 +41,7 @@ local vwv_a1_skyraider =  {
 	CAS_min				=	55,
 	V_opt				=	135,
 	V_take_off			=	65,
-	V_land				=	62,
+	V_land				=	80, -- 62,
 	has_afteburner			=	false,
 	has_speedbrake			=	true,
 	has_differential_stabilizer 	= 	false,
@@ -69,7 +69,7 @@ local vwv_a1_skyraider =  {
 	radar_can_see_ground	=	true,
 	AOA_take_off		=	0.16,
 	stores_number		=	15,
-	bank_angle_max		=	60,
+	bank_angle_max		=	40, -- 60
 	Ny_min			=	-3,
 	Ny_max			=	7,
 	tand_gear_max		=	3.3577,
@@ -99,10 +99,10 @@ local vwv_a1_skyraider =  {
 			{Transition = {"Open", "Close"},  Sequence = {{C = {{"Arg", 38, "to", 0.0, "in", 6.0},},},}, Flags = {"Reversible", "StepsBackwards"},},
 			{Transition = {"Any", "Bailout"}, Sequence = {{C = {{"JettisonCanopy", 0},},},},},
 		},
-		FoldableWings 		= {
+		FoldableWings = {
 				{Transition 		= {"Retract", "Extend"}, Sequence = {{C = {{"Arg", 8, "to", 0.0, "in", 10.0}}}}, Flags = {"Reversible"}},
 				{Transition 		= {"Extend", "Retract"}, Sequence = {{C = {{"Arg", 8, "to", 1.0, "in", 10.0}}}}, Flags = {"Reversible", "StepsBackwards"}},
-			},
+		},
     }, -- end of mechanimations
 
 	LandRWCategories =
@@ -701,7 +701,7 @@ local vwv_a1_skyraider =  {
         aerodynamics = -- Cx = Cx_0 + Cy^2*B2 +Cy^4*B4
         {
             Cy0            =    0.2,  -- zero AoA lift coefficient
-            Mzalfa         =    3.4,  -- coefficients for pitch agility
+            Mzalfa         =    4.3,   -- 3.4,  -- coefficients for pitch agility
             Mzalfadt       =    0.8,    -- coefficients for pitch agility
             kjx            =    2.25,    
             kjz            =    0.00125,
@@ -733,9 +733,9 @@ local vwv_a1_skyraider =  {
                 {0.1,    0.012,    0.117,     0.056,    0.000089,    0.25,    18,        1.85}, --76.7269mph
                 {0.2,    0.013,    0.116,     0.056,    0.000089,    0.25,    18,        1.65}, --153.454 mph
 ]]				
-				{0,      0.010,    0.117,     0.056,    0.000089,    0.11,    17,        2.00}, --0
-				{0.1,    0.014,    0.116,     0.055,    0.000089,    0.20,    17,        1.9}, --76.7269mph
-				{0.2,    0.014,    0.116,     0.055,    0.000089,    0.20,    17,        1.8}, --153.454 mph				
+				{0,      0.010,    0.117,     0.056,    0.000089,    0.25,    20,        2.00}, --0
+				{0.1,    0.012,    0.112,     0.055,    0.000089,    0.25,    20,        1.9}, --76.7269mph
+				{0.2,    0.013,    0.114,     0.055,    0.000089,    0.25,    20,        1.8}, --153.454 mph				
                 {0.3,    0.014,    0.1163,    0.054,    0.000089,    0.25,    17,        1.6}, --230.2 mph
                 {0.4,    0.016,    0.1176,    0.048,    0.000192,    0.20,    16,        1.44}, --306.908
                 {0.5,    0.020,    0.1179,    0.030,    0.000593,    0.18,    10,        1.0}, --383.635

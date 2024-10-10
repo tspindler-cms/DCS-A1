@@ -104,7 +104,6 @@ local vwv_a1_skyraider =  {
 				{Transition 		= {"Extend", "Retract"}, Sequence = {{C = {{"Arg", 8, "to", 1.0, "in", 10.0}}}}, Flags = {"Reversible", "StepsBackwards"}},
 		},
     }, -- end of mechanimations
-
 	LandRWCategories =
     {
         [1] =
@@ -297,7 +296,7 @@ local vwv_a1_skyraider =  {
 ----------------------------------------------------------------------Pylons---------------------------------------------------------------------------------------------------------------
 	Pylons =     {
 
-        pylon(1, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_1", arg = 308, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(1, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_1", arg = 308, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -316,7 +315,7 @@ local vwv_a1_skyraider =  {
 		   }
         ),
 
-        pylon(2, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_2", arg = 309, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(2, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_2", arg = 309, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -335,7 +334,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 
-       pylon(3, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_3", arg = 310, FiX = 0, FiY = 0, FiZ = 2},
+       pylon(3, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_3", arg = 310, FiX = 0, FiY = 0, FiZ = 2},
             {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -354,7 +353,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 
-      pylon(4, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_4", arg = 311, FiX = 0, FiY = 0, FiZ = 2},
+      pylon(4, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_4", arg = 311, FiX = 0, FiY = 0, FiZ = 2},
            {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -373,7 +372,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 
-       pylon(5, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_5", arg = 312, FiX = 0, FiY = 0, FiZ = 2},
+       pylon(5, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_5", arg = 312, FiX = 0, FiY = 0, FiZ = 2},
             {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -392,7 +391,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 
-       pylon(6, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_6", arg = 313, FiX = 0, FiY = 0, FiZ = 2},
+       pylon(6, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_6", arg = 313, FiX = 0, FiY = 0, FiZ = 2},
             {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -411,7 +410,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 
-        pylon(7, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_14", arg = 314},
+        pylon(7, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_14", arg = 314},
              {
 				{ CLSID = "{AN_M30A1}" 	,attach_point_position = {.500, .005 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" 	,attach_point_position = {.4500, -.05 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -441,7 +440,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 
-        pylon(8, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_13", arg = 314},
+        pylon(8, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_13", arg = 314},
             {
 
 				
@@ -467,7 +466,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 		
-        pylon(9, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_15", arg = 314},
+        pylon(9, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_15", arg = 314},
            {
 				{ CLSID = "{AN_M30A1}" 	,attach_point_position = {.500, .005 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" 	,attach_point_position = {.4500, -.05 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -496,7 +495,7 @@ local vwv_a1_skyraider =  {
 		   }
         ),
 			
-       pylon(10, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_7", arg = 315, FiX = 0, FiY = 0, FiZ = 2},
+       pylon(10, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_7", arg = 315, FiX = 0, FiY = 0, FiZ = 2},
             {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -515,7 +514,7 @@ local vwv_a1_skyraider =  {
 		   }
         ),
 			
-       pylon(11, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_8", arg = 316, FiX = 0, FiY = 0, FiZ = 2},
+       pylon(11, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_8", arg = 316, FiX = 0, FiY = 0, FiZ = 2},
             {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -534,7 +533,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 			
-        pylon(12, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_9", arg = 317, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(12, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_9", arg = 317, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -553,7 +552,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 			
-        pylon(13, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_10", arg = 318, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(13, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_10", arg = 318, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -572,7 +571,7 @@ local vwv_a1_skyraider =  {
 			}
         ),
 			
-        pylon(14, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_11", arg = 319, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(14, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_11", arg = 319, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)
@@ -591,7 +590,7 @@ local vwv_a1_skyraider =  {
 		   }
         ),
 			
-        pylon(15, 0, 0.000, -0.100, 0.000, {use_full_connector_position = false, connector = "pylon_12", arg = 320, FiX = 0, FiY = 0, FiZ = 2},
+        pylon(15, 0, 0.000, -0.100, 0.000, {use_full_connector_position = true, connector = "pylon_12", arg = 320, FiX = 0, FiY = 0, FiZ = 2},
              {
 				{ CLSID = "{AN_M30A1}" ,attach_point_position = {0.0, -.05 ,0 }},--AN-M30A1 100 lb GP HE (57 lb TNT)
 				{ CLSID = "{AN_M57}" ,attach_point_position = {0.0, -.1 ,0 }},--AN-M57A1 250 lb GP HE (129 lb TNT)

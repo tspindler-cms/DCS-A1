@@ -32,16 +32,16 @@ local vwv_a1_skyraider =  {
 	index       =  WSTYPE_PLACEHOLDER,
 	attribute   =   {wsType_Air, wsType_Airplane, wsType_Fighter, a_1_skyraider, "Battleplanes", "Refuelable"},
 	Categories  =   {},
-	M_empty				=	5429,
-	M_nominal			=	8213,
-	M_max				=	13975,
+	M_empty				=	3429,
+	M_nominal			=	5213,
+	M_max				=	10975,
 	M_fuel_max			=  	1036,
 	H_max				=	8685,
 	average_fuel_consumption	=	0.03,
-	CAS_min				=	55,
-	V_opt				=	135,
-	V_take_off			=	65,
-	V_land				=	80, -- 62,
+	CAS_min				=	50,
+	V_opt				=	165,
+	V_take_off			=	70,
+	V_land				=	60, -- 62,
 	has_afteburner			=	false,
 	has_speedbrake			=	true,
 	has_differential_stabilizer 	= 	false,
@@ -69,9 +69,9 @@ local vwv_a1_skyraider =  {
 	radar_can_see_ground	=	true,
 	AOA_take_off		=	0.16,
 	stores_number		=	15,
-	bank_angle_max		=	80, -- 60
-	Ny_min			=	-3,
-	Ny_max			=	7,
+	bank_angle_max		=	20, -- 60
+	Ny_min			=	-1,
+	Ny_max			=	3,
 	tand_gear_max		=	3.3577,
 	V_max_sea_level		= 145.0,
 	V_max_h			=	  165.0,
@@ -673,14 +673,14 @@ local vwv_a1_skyraider =  {
 	SFM_Data = {
         aerodynamics = -- Cx = Cx_0 + Cy^2*B2 +Cy^4*B4
         {
-            Cy0            =    0.2,  -- zero AoA lift coefficient
+            Cy0            =    0.0,  -- zero AoA lift coefficient
             Mzalfa         =    4.3,   -- 3.4,  -- coefficients for pitch agility
             Mzalfadt       =    0.8,    -- coefficients for pitch agility
             kjx            =    2.25,    
             kjz            =    0.00125,
-            Czbe           =    0.012, -- coefficient, along Z axis (perpendicular), affects yaw, negative value means force orientation in FC coordinate system
+            Czbe           =    -0.012, -- coefficient, along Z axis (perpendicular), affects yaw, negative value means force orientation in FC coordinate system
             cx_gear        =    0.02,  -- 0.0330,    -- coefficient, drag, gear - less drag to allow for good take-off when heavy
-            cx_flap        =    0.02,  -- 0.033,   -- coefficient, drag, full flaps - less drag to allow for good take-off when heavy
+            cx_flap        =    0.01,  -- 0.033,   -- coefficient, drag, full flaps - less drag to allow for good take-off when heavy
             cy_flap        =    0.9,   -- 0.28,    -- coefficient, normal force, lift, flaps - very efficient flaps to allow for take-off with max weight
             cx_brk         =    0.06,   -- coefficient, drag, breaks
             table_data  =
@@ -707,16 +707,16 @@ local vwv_a1_skyraider =  {
                 {0.2,    0.013,    0.116,     0.056,    0.000089,    0.25,    18,        1.65}, --153.454 mph
 ]]				
 				{0,      0.010,    0.517,     0.056,    0.000089,    0.25,    20,        0.00}, --0
-				{0.1,    0.012,    0.312,     0.055,    0.000089,    0.35,    20,        0.9}, --76.7269mph
-				{0.2,    0.013,    0.154,     0.055,    0.000089,    0.95,    20,        1.2}, --153.454 mph				
-                {0.3,    0.014,    0.1163,    0.054,    0.000089,    1.25,    17,        1.6}, --230.2 mph
-                {0.4,    0.016,    0.1176,    0.048,    0.000192,    1.20,    16,        1.44}, --306.908
-                {0.5,    0.020,    0.1179,    0.030,    0.000593,    1.18,    10,        1.0}, --383.635
-                {0.6,    0.021,    0.1180,    0.029,    0.0004,      1.15,     9,        0.9}, --460.361
-                {0.7,    0.021,    0.1183,    0.028,    0.00032,     0.14,     9,        0.85}, --537.088
-                {0.8,    0.064,    0.1186,    0.17,     0.4,         0.1,      3,        0.6}, --613.815
-                {0.9,    0.0995,    0.1185,    0.175,    2.7925,      0.1,      3,        0.4}, --690.542
-                {1,      0.146,     0.1184,    0.2,      3.19,        0.1,      1,        0.2}, --767.269
+				{0.1,    0.012,    0.212,     0.055,    0.000089,    0.85,    20,        0.2}, --76.7269mph
+				{0.2,    0.013,    0.454,     0.055,    0.000089,    0.95,    20,        1.2}, --153.454 mph				
+                {0.3,    0.014,    0.4163,    0.054,    0.000089,    1.25,    17,        1.6}, --230.2 mph
+                {0.4,    0.016,    0.4176,    0.048,    0.000192,    1.20,    16,        1.44}, --306.908
+                {0.5,    0.020,    0.4179,    0.030,    0.000593,    1.18,    10,        1.0}, --383.635
+                {0.6,    0.021,    0.4180,    0.029,    0.0004,      1.15,     9,        0.9}, --460.361
+                {0.7,    0.021,    0.4183,    0.028,    0.00032,     0.14,     9,        0.85}, --537.088
+                {0.8,    0.064,    0.4186,    0.17,     0.4,         0.1,      3,        0.6}, --613.815
+                {0.9,    0.0995,    0.4185,    0.175,    2.7925,      0.1,      3,        0.4}, --690.542
+                {1,      0.146,     0.4184,    0.2,      3.19,        0.1,      1,        0.2}, --767.269
             }, -- end of table_data
             -- M - Mach number
             -- Cx0 - Coefficient, drag, profile, of the airplane
@@ -768,12 +768,12 @@ local vwv_a1_skyraider =  {
             {
                 [1] =     {0,      26395.9    ,26395.9},
                 [2] =     {0.1,    26393.8    ,26393.8},
-                [3] =     {0.2,    22995.6    ,22995.6},
-                [4] =     {0.3,    21800.8    ,21800.8},
-                [5] =     {0.4,    20673.3    ,20673.3},
-                [6] =     {0.5,    20254.2    ,20254.2},
-                [7] =     {0.6,    20029.2    ,20029.2},
-                [8] =     {0.7,    20012.3    ,20012.3},
+                [3] =     {0.2,    12995.6    ,12995.6},
+                [4] =     {0.3,    11800.8    ,11800.8},
+                [5] =     {0.4,    10673.3    ,10673.3},
+                [6] =     {0.5,    10254.2    ,10254.2},
+                [7] =     {0.6,    10029.2    ,10029.2},
+                [8] =     {0.7,    10012.3    ,10012.3},
                 [9] =     {0.8,     6719.3    , 6719.3},
                 [10] =    {0.9,     4650      , 4650},
 

@@ -3,7 +3,7 @@ dofile(current_mod_path.."/a-1_skyraider_damage.lua")
 local vwv_a1_skyraider =  {
 
 	Name 				=  'vwv_a1_skyraider',
-	DisplayName			= _('A-1H Skyraider'),
+	DisplayName			= _('[VWV] A-1H Skyraider'),
 	DisplayNameShort	= _('A-1H'),
 	Cannon = "yes",
 

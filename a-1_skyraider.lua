@@ -135,17 +135,20 @@ local vwv_a1_skyraider =  {
         },
     }, -- end of TakeOffRWCategories
 
+	-- From toan 2024-12-11
 	engines_nozzles =
 	{
 		[1] =
-		{
-			pos 		=  {4.3,	0.24,	-0.672}, -- nozzle coords
-			elevation   =  0, -- AFB cone elevation
-			diameter	 = 0, -- AFB cone diameter
-			exhaust_length_ab	=	0,
-			exhaust_length_ab_K	=	0.35,
-			smokiness_level     = 	0.1,
-		},
+        {
+            pos         =  {-4.3,    0.24,    -0.672}, -- nozzle coords
+            elevation   =  0, -- AFB cone elevation
+            diameter    = 0.5, -- AFB cone diameter
+            exhaust_length_ab = 0.01,
+            exhaust_length_ab_K = 0.7,
+            smokiness_level = 0.2,
+            afterburner_circles_count = 0,
+			-- engine_number  = 1, --both to first engine
+        },
 	}, -- end of engines_nozzles
 
 	crew_size	 = 1,
